@@ -1,0 +1,8 @@
+<resources>
+    <style name="MyAppTheme" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    </style>
+</resources>
