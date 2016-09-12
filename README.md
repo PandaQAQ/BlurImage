@@ -1,7 +1,9 @@
 # BlurImage
-==imageView图片模糊处理作为父控件背景小demo==
+imageView图片模糊处理作为父控件背景小demo
+
 **说明**
 本例是通过获取ImageView中的Bitmap位图后进行模糊处理再设置为其他控件的背景图。
+
 先上效果图：
 ![效果图][1]
 可以看到图上有采样间隔和模糊度两个seekbar。
