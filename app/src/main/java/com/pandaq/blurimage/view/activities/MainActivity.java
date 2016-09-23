@@ -32,9 +32,6 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
     SeekBar mBlur;
     @BindView(R.id.sampling)
     SeekBar mSampling;
-    private int bitmap_width;
-    private int bitmap_hight;
-    private Bitmap image_bitmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,15 +40,14 @@ public class MainActivity extends Activity implements SeekBar.OnSeekBarChangeLis
         ButterKnife.bind(this);
         mBlur.setOnSeekBarChangeListener(this);
         mSampling.setOnSeekBarChangeListener(this);
-//        image_bitmap = ((BitmapDrawable) mImage.getDrawable()).getBitmap();
         initBackGround(mImage);
     }
 
     private void initBackGround(ImageView image) {
         Bitmap bitmap = ((BitmapDrawable) image.getDrawable()).getBitmap();
         //创建一个长宽等比缩小的Bitmap
-        bitmap_width = bitmap.getWidth();
-        bitmap_hight = bitmap.getHeight();
+        int bitmap_width = bitmap.getWidth();
+        int bitmap_hight = bitmap.getHeight();
         Bitmap overlay = Bitmap.createBitmap((int) (bitmap_width / scaleFactor), (int) (bitmap_hight / scaleFactor), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(overlay);
         //将canvas按照bitmap等量缩放，模糊处理的图片才能显示正常
