@@ -1,9 +1,6 @@
 # BlurImage
 imageView图片模糊处理作为父控件背景小demo
-<<<<<<< HEAD
-=======
 
->>>>>>> 0e68b2ab5113cd28f9194033fbd72771838feced
 **说明**
 本例是通过获取ImageView中的Bitmap位图后进行模糊处理再设置为其他控件的背景图。
 
@@ -17,7 +14,6 @@ imageView图片模糊处理作为父控件背景小demo
 
 **模糊度**：及对图片进行模糊计算处理而不是像采样那样仅仅是通过按长宽比来缩放图片大小。图中变化不是太明显的原因是采样设为1的时候的模糊效果，seekbar的范围我设置的0-5.将采样间隔加大的话效果会很明显，我也不推荐使用原图来模糊处理
 
-<<<<<<< HEAD
 **代码**
 实现代码也很简单
 1.获取ImageView显示的Bitmap bitmap
@@ -48,6 +44,4 @@ imageView图片模糊处理作为父控件背景小demo
 
   [1]: http://oddbiem8l.bkt.clouddn.com/11.gif "11.gif"
   [2]: https://github.com/PandaQAQ/BlurImage.git
-=======
   [1]: https://github.com/PandaQAQ/BlurImage/blob/master/image/11.gif "11.gif"
->>>>>>> 0e68b2ab5113cd28f9194033fbd72771838feced
